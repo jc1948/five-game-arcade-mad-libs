@@ -43,6 +43,11 @@ class Application(Frame):
         self.noun3_ent.grid(row = 5, column = 1, sticky = W)
         
         Label(self,
+              text = "Noun: "
+              ).grid(row = 6, column = 0, sticky = W)
+        self.noun7_ent = Entry(self)
+        self.noun7_ent.grid(row = 6, column = 1, sticky = W)
+        Label(self,
               text = "Game: "
               ).grid(row = 1, column = 2, sticky = W)
         self.game1_ent = Entry(self)
@@ -55,13 +60,13 @@ class Application(Frame):
         self.noun4_ent.grid(row = 2, column = 3, sticky = W)  
         
         Label(self,
-              text = "Verb: "
+              text = "Verb(-ing): "
               ).grid(row = 3, column = 2, sticky = W)
         self.verb1_ent = Entry(self)
         self.verb1_ent.grid(row = 3, column = 3, sticky = W)
         
         Label(self,
-              text = "Verb: "
+              text = "Verb(-ing): "
               ).grid(row = 4, column = 2, sticky = W)
         self.verb2_ent = Entry(self)
         self.verb2_ent.grid(row = 4, column = 3, sticky = W)
@@ -103,7 +108,7 @@ class Application(Frame):
         self.place1_ent.grid(row = 4, column = 5, sticky = W)
         
         Label(self,
-              text = "Verb: "
+              text = "Verb(-ing): "
               ).grid(row = 5, column = 4, sticky = W)
         self.verb4_ent = Entry(self)
         self.verb4_ent.grid(row = 5, column = 5, sticky = W)
@@ -113,12 +118,6 @@ class Application(Frame):
               ).grid(row = 6, column = 4, sticky = W)
         self.adj3_ent = Entry(self)
         self.adj3_ent.grid(row = 6, column = 5, sticky = W)
-       
-        Label(self,
-              text = "Noun: "
-              ).grid(row = 6, column = 0, sticky = W)
-        self.noun7_ent = Entry(self)
-        self.noun7_ent.grid(row = 6, column = 1, sticky = W)
         
         Button(self,
                text = "Click for story",
