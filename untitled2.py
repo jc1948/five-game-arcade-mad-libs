@@ -1,6 +1,6 @@
 import tkinter
 
-class Application(Frame):
+class Application(tkinter.Frame):
     def __init__(self, master):
         """ Initialize Frame. """
         super(Application, self).__init__(master)  
@@ -8,123 +8,123 @@ class Application(Frame):
         self.create_widgets()
 
     def create_widgets(self):
-        Label(self,
+        tkinter.Label(self,
               text = "Enter information for a new story"
-              ).grid(row = 0, column = 0, columnspan = 2, sticky = W)
+              ).grid(row = 0, column = 0, columnspan = 2, sticky = tkinter.W)
 
-        Label(self,
+        tkinter.Label(self,
               text = "Adjective: "
-              ).grid(row = 1, column = 0, sticky = W)
-        self.adj1_ent = Entry(self)
-        self.adj1_ent.grid(row = 1, column = 1, sticky = W)
+              ).grid(row = 1, column = 0, sticky = tkinter.W)
+        self.adj1_ent = tkinter.Entry(self)
+        self.adj1_ent.grid(row = 1, column = 1, sticky = tkinter.W)
 
-        Label(self,
+        tkinter.Label(self,
               text = "Adjective:"
-              ).grid(row = 2, column = 0, sticky = W)
-        self.adj2_ent = Entry(self)
-        self.adj2_ent.grid(row = 2, column = 1, sticky = W)
+              ).grid(row = 2, column = 0, sticky = tkinter.W)
+        self.adj2_ent = tkinter.Entry(self)
+        self.adj2_ent.grid(row = 2, column = 1, sticky = tkinter.W)
 
-        Label(self,
+        tkinter.Label(self,
               text = "Noun:"
-              ).grid(row = 3, column = 0, sticky = W)
-        self.noun1_ent = Entry(self)
-        self.noun1_ent.grid(row = 3, column = 1, sticky = W)
+              ).grid(row = 3, column = 0, sticky = tkinter.W)
+        self.noun1_ent = tkinter.Entry(self)
+        self.noun1_ent.grid(row = 3, column = 1, sticky = tkinter.W)
 
-        Label(self,
+        tkinter.Label(self,
               text = "Noun:"
-              ).grid(row = 4, column = 0, sticky = W)
-        self.noun2_ent = Entry(self)
-        self.noun2_ent.grid(row = 4, column = 1, sticky = W)
+              ).grid(row = 4, column = 0, sticky = tkinter.W)
+        self.noun2_ent = tkinter.Entry(self)
+        self.noun2_ent.grid(row = 4, column = 1, sticky = tkinter.W)
 
-        Label(self,
+        tkinter.Label(self,
               text = "Noun:"
-              ).grid(row = 5, column = 0, sticky = W)
-        self.noun3_ent = Entry(self)      
-        self.noun3_ent.grid(row = 5, column = 1, sticky = W)
+              ).grid(row = 5, column = 0, sticky = tkinter.W)
+        self.noun3_ent = tkinter.Entry(self)      
+        self.noun3_ent.grid(row = 5, column = 1, sticky = tkinter.W)
         
-        Label(self,
+        tkinter.Label(self,
               text = "Noun: "
-              ).grid(row = 6, column = 0, sticky = W)
-        self.noun7_ent = Entry(self)
-        self.noun7_ent.grid(row = 6, column = 1, sticky = W)
-        Label(self,
+              ).grid(row = 6, column = 0, sticky = tkinter.W)
+        self.noun7_ent = tkinter.Entry(self)
+        self.noun7_ent.grid(row = 6, column = 1, sticky = tkinter.W)
+        tkinter.Label(self,
               text = "Game: "
-              ).grid(row = 1, column = 2, sticky = W)
-        self.game1_ent = Entry(self)
-        self.game1_ent.grid(row = 1, column = 3, sticky = W)
+              ).grid(row = 1, column = 2, sticky = tkinter.W)
+        self.game1_ent = tkinter.Entry(self)
+        self.game1_ent.grid(row = 1, column = 3, sticky = tkinter.W)
         
-        Label(self,
+        tkinter.Label(self,
               text = "Noun: "
-              ).grid(row = 2, column = 2, sticky = W)
-        self.noun4_ent = Entry(self)
-        self.noun4_ent.grid(row = 2, column = 3, sticky = W)  
+              ).grid(row = 2, column = 2, sticky = tkinter.W)
+        self.noun4_ent = tkinter.Entry(self)
+        self.noun4_ent.grid(row = 2, column = 3, sticky = tkinter.W)  
         
-        Label(self,
+        tkinter.Label(self,
               text = "Verb(-ing): "
-              ).grid(row = 3, column = 2, sticky = W)
-        self.verb1_ent = Entry(self)
-        self.verb1_ent.grid(row = 3, column = 3, sticky = W)
+              ).grid(row = 3, column = 2, sticky = tkinter.W)
+        self.verb1_ent = tkinter.Entry(self)
+        self.verb1_ent.grid(row = 3, column = 3, sticky = tkinter.W)
         
-        Label(self,
+        tkinter.Label(self,
               text = "Verb(-ing): "
-              ).grid(row = 4, column = 2, sticky = W)
-        self.verb2_ent = Entry(self)
-        self.verb2_ent.grid(row = 4, column = 3, sticky = W)
+              ).grid(row = 4, column = 2, sticky = tkinter.W)
+        self.verb2_ent = tkinter.Entry(self)
+        self.verb2_ent.grid(row = 4, column = 3, sticky = tkinter.W)
          
-        Label(self,
+        tkinter.Label(self,
               text = "Noun: "
-              ).grid(row = 5, column = 2, sticky = W)
-        self.noun5_ent = Entry(self)
-        self.noun5_ent.grid(row = 5, column = 3, sticky = W)
+              ).grid(row = 5, column = 2, sticky = tkinter.W)
+        self.noun5_ent = tkinter.Entry(self)
+        self.noun5_ent.grid(row = 5, column = 3, sticky = tkinter.W)
         
-        Label(self,
+        tkinter.Label(self,
               text = "Verb: "
-              ).grid(row = 6, column = 2, sticky = W)
-        self.verb3_ent = Entry(self)
-        self.verb3_ent.grid(row = 6, column = 3, sticky = W)
+              ).grid(row = 6, column = 2, sticky = tkinter.W)
+        self.verb3_ent = tkinter.Entry(self)
+        self.verb3_ent.grid(row = 6, column = 3, sticky = tkinter.W)
         
-        Label(self,
+        tkinter.Label(self,
               text = "Noun: "
-              ).grid(row = 1, column = 4, sticky = W)
-        self.noun6_ent = Entry(self)
-        self.noun6_ent.grid(row = 1, column = 5, sticky = W)
+              ).grid(row = 1, column = 4, sticky = tkinter.W)
+        self.noun6_ent = tkinter.Entry(self)
+        self.noun6_ent.grid(row = 1, column = 5, sticky = tkinter.W)
         
-        Label(self,
+        tkinter.Label(self,
               text = "Plant: "
-              ).grid(row = 2, column = 4, sticky = W)
-        self.plant1_ent = Entry(self)
-        self.plant1_ent.grid(row = 2, column = 5, sticky = W)
+              ).grid(row = 2, column = 4, sticky = tkinter.W)
+        self.plant1_ent = tkinter.Entry(self)
+        self.plant1_ent.grid(row = 2, column = 5, sticky = tkinter.W)
        
-        Label(self,
+        tkinter.Label(self,
               text = "Body part: "
-              ).grid(row = 3, column = 4, sticky = W)
-        self.bp1_ent = Entry(self)
-        self.bp1_ent.grid(row = 3, column = 5, sticky = W)
+              ).grid(row = 3, column = 4, sticky = tkinter.W)
+        self.bp1_ent = tkinter.Entry(self)
+        self.bp1_ent.grid(row = 3, column = 5, sticky = tkinter.W)
         
-        Label(self,
+        tkinter.Label(self,
               text = "Place: "
-              ).grid(row = 4, column = 4, sticky = W)
-        self.place1_ent = Entry(self)
-        self.place1_ent.grid(row = 4, column = 5, sticky = W)
+              ).grid(row = 4, column = 4, sticky = tkinter.W)
+        self.place1_ent = tkinter.Entry(self)
+        self.place1_ent.grid(row = 4, column = 5, sticky = tkinter.W)
         
-        Label(self,
+        tkinter.Label(self,
               text = "Verb(-ing): "
-              ).grid(row = 5, column = 4, sticky = W)
-        self.verb4_ent = Entry(self)
-        self.verb4_ent.grid(row = 5, column = 5, sticky = W)
+              ).grid(row = 5, column = 4, sticky = tkinter.W)
+        self.verb4_ent = tkinter.Entry(self)
+        self.verb4_ent.grid(row = 5, column = 5, sticky = tkinter.W)
         
-        Label(self,
+        tkinter.Label(self,
               text = "Adjective: "
-              ).grid(row = 6, column = 4, sticky = W)
-        self.adj3_ent = Entry(self)
-        self.adj3_ent.grid(row = 6, column = 5, sticky = W)
+              ).grid(row = 6, column = 4, sticky = tkinter.W)
+        self.adj3_ent = tkinter.Entry(self)
+        self.adj3_ent.grid(row = 6, column = 5, sticky = tkinter.W)
         
-        Button(self,
+        tkinter.Button(self,
                text = "Click for story",
                command = self.tell_story
-               ).grid(row = 8, column = 4, sticky = W)
+               ).grid(row = 8, column = 4, sticky = tkinter.W)
 
-        self.story_txt = Text(self, width = 75, height = 10, wrap = WORD)
+        self.story_txt = tkinter.Text(self, width = 75, height = 10, wrap = tkinter.WORD)
         self.story_txt.grid(row = 8, column = 0, columnspan = 4)
 
     def tell_story(self):
@@ -173,7 +173,7 @@ class Application(Frame):
         story += verb3 + "."
         story += "Last summer, my little brother fell in a "
         story += noun6
-        story += "and got poison "
+        story += " and got poison "
         story += plant1
         story += " all over his "
         story += bp1 + "."
@@ -187,11 +187,11 @@ class Application(Frame):
         story += noun7
         story += " to pay for the vacation."
                                  
-        self.story_txt.delete(0.0, END)
+        self.story_txt.delete(0.0, tkinter.END)
         self.story_txt.insert(0.0, story)
 
 def main():
-    root = Tk()
+    root = tkinter.Tk()
     root.title("Mad Lib")
     app = Application(root)
     root.mainloop()
