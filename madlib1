@@ -1,0 +1,201 @@
+from tkinter import *
+
+class Application(Frame):
+    def __init__(self, master):
+        """ Initialize Frame. """
+        super(Application, self).__init__(master)  
+        self.grid()
+        self.create_widgets()
+
+    def create_widgets(self):
+        Label(self,
+              text = "Enter information for a new story"
+              ).grid(row = 0, column = 0, columnspan = 2, sticky = W)
+
+        Label(self,
+              text = "Adjective: "
+              ).grid(row = 1, column = 0, sticky = W)
+        self.adj1_ent = Entry(self)
+        self.adj1_ent.grid(row = 1, column = 1, sticky = W)
+
+        Label(self,
+              text = "Adjective:"
+              ).grid(row = 2, column = 0, sticky = W)
+        self.adj2_ent = Entry(self)
+        self.adj2_ent.grid(row = 2, column = 1, sticky = W)
+
+        Label(self,
+              text = "Noun:"
+              ).grid(row = 3, column = 0, sticky = W)
+        self.noun1_ent = Entry(self)
+        self.noun1_ent.grid(row = 3, column = 1, sticky = W)
+
+        Label(self,
+              text = "Noun:"
+              ).grid(row = 4, column = 0, sticky = W)
+        self.noun2_ent = Entry(self)
+        self.noun2_ent.grid(row = 4, column = 1, sticky = W)
+
+        Label(self,
+              text = "Adjective:"
+              ).grid(row = 5, column = 0, sticky = W)
+        self.noun3_ent = Entry(self)      
+        self.noun3_ent.grid(row = 5, column = 1, sticky = W)
+        
+        Label(self,
+              text = "Noun: "
+              ).grid(row = 6, column = 0, sticky = W)
+        self.noun7_ent = Entry(self)
+        self.noun7_ent.grid(row = 6, column = 1, sticky = W)
+        Label(self,
+              text = "Noun: "
+              ).grid(row = 1, column = 2, sticky = W)
+        self.game1_ent = Entry(self)
+        self.game1_ent.grid(row = 1, column = 3, sticky = W)
+        
+        Label(self,
+              text = "Noun: "
+              ).grid(row = 2, column = 2, sticky = W)
+        self.noun4_ent = Entry(self)
+        self.noun4_ent.grid(row = 2, column = 3, sticky = W)  
+        
+        Label(self,
+              text = "Adjective: "
+              ).grid(row = 3, column = 2, sticky = W)
+        self.verb1_ent = Entry(self)
+        self.verb1_ent.grid(row = 3, column = 3, sticky = W)
+        
+        Label(self,
+              text = "Name: "
+              ).grid(row = 4, column = 2, sticky = W)
+        self.verb2_ent = Entry(self)
+        self.verb2_ent.grid(row = 4, column = 3, sticky = W)
+         
+        Label(self,
+              text = "Adjective: "
+              ).grid(row = 5, column = 2, sticky = W)
+        self.noun5_ent = Entry(self)
+        self.noun5_ent.grid(row = 5, column = 3, sticky = W)
+        
+        Label(self,
+              text = "Noun: "
+              ).grid(row = 6, column = 2, sticky = W)
+        self.verb3_ent = Entry(self)
+        self.verb3_ent.grid(row = 6, column = 3, sticky = W)
+        
+        Label(self,
+              text = "Adjective: "
+              ).grid(row = 1, column = 4, sticky = W)
+        self.noun6_ent = Entry(self)
+        self.noun6_ent.grid(row = 1, column = 5, sticky = W)
+        
+        Label(self,
+              text = "Noun: "
+              ).grid(row = 2, column = 4, sticky = W)
+        self.plant1_ent = Entry(self)
+        self.plant1_ent.grid(row = 2, column = 5, sticky = W)
+       
+        Label(self,
+              text = "Noun: "
+              ).grid(row = 3, column = 4, sticky = W)
+        self.bp1_ent = Entry(self)
+        self.bp1_ent.grid(row = 3, column = 5, sticky = W)
+        
+        Label(self,
+              text = "Noun: "
+              ).grid(row = 4, column = 4, sticky = W)
+        self.place1_ent = Entry(self)
+        self.place1_ent.grid(row = 4, column = 5, sticky = W)
+        
+        Label(self,
+              text = "Adjective: "
+              ).grid(row = 5, column = 4, sticky = W)
+        self.verb4_ent = Entry(self)
+        self.verb4_ent.grid(row = 5, column = 5, sticky = W)
+        
+        Label(self,
+              text = "Adjective: "
+              ).grid(row = 6, column = 4, sticky = W)
+        self.adj3_ent = Entry(self)
+        self.adj3_ent.grid(row = 6, column = 5, sticky = W)
+        
+        Button(self,
+               text = "Click for story",
+               command = self.tell_story
+               ).grid(row = 8, column = 4, sticky = W)
+
+        self.story_txt = Text(self, width = 75, height = 10, wrap = WORD)
+        self.story_txt.grid(row = 8, column = 0, columnspan = 4)
+
+    def tell_story(self):
+        """ Fill text box with new story based on user input. """
+        adj1 = self.adj1_ent.get()
+        adj2 = self.adj2_ent.get()
+        noun1 = self.noun1_ent.get()
+        noun2 = self.noun2_ent.get()
+        adj3 = self.noun3_ent.get()
+        noun3 = self.game1_ent.get()
+        noun4 = self.noun4_ent.get()   
+        noun5 = self.verb1_ent.get()  
+        adj4 = self.verb2_ent.get()  
+        name1 = self.noun5_ent.get()
+        adj5 = self.verb3_ent.get()
+        noun6 = self.noun6_ent.get()
+        adj6 = self.plant1_ent.get()
+        noun7 = self.bp1_ent.get()
+        noun8 = self.place1_ent.get()
+        noun9 = self.verb4_ent.get()   
+        adj7 = self.adj3_ent.get()  
+        adj8 = self.noun7_ent.get() 
+ 
+        story = "Ladies and gentlemen, on this "
+        story += adj1
+        story += " occasion, it is a privilege to address such a "
+        story += adj2
+        story += " loooking group of "
+        story += noun1 + "."
+        story += " I can tell from your smiling "
+        story += noun2
+        story += " that you will support my "
+        story += adj3
+        story += " program in the coming election."
+        story += " I promise that, if elected, there will be a "
+        story += noun3
+        story += " in every "
+        story += noun4
+        story += " and two "
+        story += noun5
+        story += " in every garage."
+        story += " I want to warn you against my "
+        story += adj4
+        story += " opponent, Mr. " 
+        story += name1 + "."
+        story += " The man is nothing but a "
+        story += adj5 + " "
+        story += noun6 + "."
+        story += " He has a "
+        story += adj6
+        story += " character and is working "
+        story += noun7
+        story += " in glove with the criminal element."
+        story += " I will keep crooks from dipping their "
+        story += noun8
+        story += " in the public till."
+        story += " I promise you "
+        story += noun9
+        story += " government "
+        story += adj8
+        story += " taxes."
+                                 
+        self.story_txt.delete(0.0, END)
+        self.story_txt.insert(0.0, story)
+
+def main():
+    root = Tk()
+    root.title("Mad Lib")
+    app = Application(root)
+    root.mainloop()
+
+main()
+
+
